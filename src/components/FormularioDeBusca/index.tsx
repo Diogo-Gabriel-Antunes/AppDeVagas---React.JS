@@ -1,17 +1,4 @@
-import {
-  Heading,
-  Button,
-  FormLabel,
-  Box,
-  Checkbox,
-  Input,
-  Slider,
-  SliderFilledTrack,
-  SliderThumb,
-  SliderTrack,
-  SliderMark,
-  Text,
-} from '@chakra-ui/react';
+import { Heading, Button, FormLabel, Box, Input } from '@chakra-ui/react';
 import { useState } from 'react';
 import OpcoesCarreira from '../OpcoesCarreira';
 import OpcoesTecnologia from '../OpcoesTecnologia';
@@ -22,7 +9,7 @@ const FormularioDeBuscar = () => {
   const [faixaSalarialInicial, setFaixaSalarialInicial] = useState(1000);
   const [faixaSalarialMaximo, setFaixaSalarialMaximo] = useState(27000);
   return (
-    <Box bgColor="white.100" padding="2rem">
+    <Box bgColor="white.100" padding="2rem" height="770px">
       <Heading as="h2" fontWeight="700" fontSize="lg">
         Filtre sua busca{' '}
         <Button
@@ -96,6 +83,17 @@ const FormularioDeBuscar = () => {
         faixaSalarialMaximo={faixaSalarialMaximo}
         setFaixaSalarialMaximo={setFaixaSalarialMaximo}
       />
+      <Box display="flex" width="100%">
+        <Button
+          colorScheme="blue"
+          margin="0 auto"
+          width="100%"
+          borderRadius="4px"
+          letterSpacing="0.2em"
+        >
+          FILTRAR
+        </Button>
+      </Box>
     </Box>
   );
 };

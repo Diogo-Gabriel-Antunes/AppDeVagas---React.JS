@@ -40,17 +40,6 @@ const FaixaSalarial = ({
           <SliderThumb />
         </Slider>
       </Box>
-      <Box display="flex" width="100%">
-        <Button
-          colorScheme="blue"
-          margin="0 auto"
-          width="100%"
-          borderRadius="4px"
-          letterSpacing="0.2em"
-        >
-          FILTRAR
-        </Button>
-      </Box>
     </Box>
   );
 };

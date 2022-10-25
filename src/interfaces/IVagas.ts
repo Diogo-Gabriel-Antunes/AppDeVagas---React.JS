@@ -1,4 +1,6 @@
-import { ITecnologia } from './ITecnologia';
+import { IBenefits } from './IBenefits';
+import { ICompany } from './IEmpresa';
+import { ITechnologies } from './ITechnologies';
 
 export interface IVagas {
   id: number;
@@ -11,7 +13,8 @@ export interface IVagas {
   category: string;
   activities: string;
   active: boolean;
-
-  company: number;
-  technologies: ITecnologia[];
+  salaryRangeMax: number;
+  company: ICompany;
+  technologies: ITechnologies[];
+  benefits: IBenefits[];
 }
